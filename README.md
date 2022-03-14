@@ -31,6 +31,6 @@ On average, August represents the strongest seasonal travel period at Boston Log
 ![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Seasonal%20Plot.png) 
 ![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Seasonal%20Subseries.png)
 
-The 1st and 12th lags of the data show strong autocorrelation - representing the upward trend and seasonality components respectively.
+The 1st and 12th lags of the data show strong autocorrelation - representing the upward trend and seasonal components, respectively.
 
 ![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Autocorrelation%20Plot.png)
