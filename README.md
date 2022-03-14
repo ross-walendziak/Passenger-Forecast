@@ -35,13 +35,15 @@ The 1st and 12th lags of the data show strong autocorrelation - representing the
 
 ![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Autocorrelation%20Plot.png)
 
-# Model Building
+# Model Building:
 
 * Models were evaluated using root mean squared error (RMSE)
 * Mean, naive, linear trend - Base case models without seasonality considerations
 * Seasonal naive - Base case model with seasonality
 * Seasonal Decomposition, harmonic K6, exponential smoothing and ARIMA - Candidates for best fit inclusive of both trend and seasonality components. 
-  * Six Fourier terms best fit the historical model using historical data.
+  * Six Fourier terms best fit the historical data.
   * The exponential smoothing model (ETS) was best fit using ETS(passengers ~ error('M') + trend('N') + season('M')).  
   * The ARIMA was optimized using an ARIMA(0,1,1)(0,1,1)[12].
 * Piecewise linear model with ARIMA errors - Attempt to estimate coefficients for the pre and post crisis periods reflected in the Sept 2001 Terrror Attacks and the C19 global pandemic sub-periods.
+
+# Model Performance:
