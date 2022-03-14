@@ -19,7 +19,7 @@ https://www.massport.com/logan-airport/about-logan/airport-statistics/
 * Parsed monthly passenger volume from numeric data in PDF
 * Parsed date out of PDF sub-title information
 * Cleaned extraneous spaces and punctuation from parsed passenger volume and associated dates
-* Combined passenger volumne and associated date stamp into tsibble object for later time series analysis
+* Combined passenger volume and associated date stamp into tsibble object for later time series analysis
 
 # Exploratory Data Analysis:
 The time series generally shows an upward tread with strong seasonality, with the larger trend disrupted by the C19 global pandemic.
