@@ -22,3 +22,8 @@ https://www.massport.com/logan-airport/about-logan/airport-statistics/
 * Combined passenger volumne and associated date stamp into tsibble object for later time series analysis
 
 # Exploratory Data Analysis:
+Placeholder Text
+
+![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Raw%20Time%20Series%20Plot.png)
+![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Seasonal%20Plot.png)
+![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Seasonal%20Subseries.png)
