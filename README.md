@@ -37,7 +37,6 @@ The 1st and 12th lags of the data show strong autocorrelation - representing the
 
 # Model Building:
 
-* Models were evaluated using root mean squared error (RMSE)
 * Mean, naive, linear trend - Base case models without seasonality considerations
 * Seasonal naive - Base case model with seasonality
 * Seasonal Decomposition, harmonic K6, exponential smoothing and ARIMA - Candidates for best fit inclusive of both trend and seasonality components. 
@@ -47,3 +46,16 @@ The 1st and 12th lags of the data show strong autocorrelation - representing the
 * Piecewise linear model with ARIMA errors - Attempt to estimate coefficients for the pre and post crisis periods reflected in the Sept 2001 Terrror Attacks and the C19 global pandemic sub-periods.
 
 # Model Performance:
+
+* Models were evaluated using root mean squared error (RMSE)
+* Cross validation (CV) was performed starting with an initial training bank of 36 (3-year) observations, producing a 2-year forecast, and evaluating RMSE.
+  * Subsequent iterations in the CV approach added 3-months of data and again produced a 2-year forecast.  RMSE was evaulationed. Total RMSE was averaged for each model.
+* As expected, the test set and CV aproaches produced a larger RMSE than than training set. 
+* The decompostion model produced the lowest RMSE in the CV approach.  However, it performed poorly during the C19 sub-period, revealing fragility to crisis.
+* The exponential smoothing, ETS(A,N,A) model performed similarly to the decomposition model - with more robustness during crisis periods.
+* Best model selection was achieved with ETS(A,N,A).
+
+![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Model%20Performance.png)
+
+# 2-year Forecast:
+![](https://github.com/ross-walendziak/Passenger-Forecast/blob/main/graphics/Final%20ETS%20forecast.png)
