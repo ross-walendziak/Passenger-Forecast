@@ -9,8 +9,10 @@
 # Code and Resources Used:
 * R Version: 4.1.2
 * Packages: tidyverse, tsibble, dplyr, feasts, lubridate, fpp3, tidyr, gplot2, tibbletime, stargazer, pdftools
-* PDF Scrapper Article: https://crimebythenumbers.com/scrape-table.html
-* Text: https://otexts.com/fpp3/
+* PDF Scrapper Article: (https://crimebythenumbers.com/scrape-table.html)
+* Text: (https://otexts.com/fpp3/)
 
 # Data Source:
 https://www.massport.com/logan-airport/about-logan/airport-statistics/
+
+# Data Cleaning:
