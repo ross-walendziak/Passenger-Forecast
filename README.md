@@ -1,6 +1,4 @@
-# Passenger-Forecast
-
-# Project Overview:
+# Passenger-Forecast | Project Overview:
 * Created a tool that scapes PDF documents from massport.com for monthly passenger volumes at Boston Logan Airport using the pdftools package in r for the Jan 1999 to Oct 2021 period.
 * Raw data is cleaned and assembed into a time series tsibble object using the various tidyverse packages.
 * Exploratory data analysis is preformed to reveal insights on long term passenger terms, monthly seasonality and the relationship between lags (autocorrelations) of successive passenger volume observations.
