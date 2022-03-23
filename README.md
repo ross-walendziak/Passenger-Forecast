@@ -49,7 +49,7 @@ The 1st and 12th lags of the data show strong autocorrelation - representing the
 
 * Models were evaluated using root mean squared error (RMSE)
 * Cross validation (CV) was performed starting with an initial training bank of 36 (3-year) observations, producing a 2-year forecast, and evaluating RMSE.
-  * Subsequent iterations in the CV approach added 3-months of data and again produced a 2-year forecast.  RMSE was evaulationed. Total RMSE was averaged across all 2-     year forecasts for each model considered.
+  * Subsequent iterations in the CV approach added 3-months of data and again produced a 2-year forecast.  RMSE was evaluated. Total RMSE was averaged across all 2-     year forecasts for each model considered.
 * As expected, the testing set and CV aproaches produced a larger RMSE than than training set. 
 * The decompostion model produced the lowest RMSE in the CV approach.  However, it performed poorly during the C19 sub-period, revealing fragility in estimating         crisis periods.
 * The exponential smoothing ETS(A,N,A) model performed similarly to the decomposition model - with more robustness during crisis periods.
